@@ -10,3 +10,14 @@ This project implements a TCP socket server in Rust using the Tokio library. The
 ## Dependencies
 * tokio: An asynchronous runtime for Rust.
 * serde and serde_json: For serializing and deserializing JSON.
+
+## Running server
+
+```BASH
+cargo run
+```
+
+## Binding To Server
+``` BASH
+nc 127.0.0.1 8080 
+```

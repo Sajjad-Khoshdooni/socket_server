@@ -14,7 +14,8 @@ async fn main() -> Result<(), Box<dyn Error>> {
     println!("Server running on 127.0.0.1:8080");
 
     loop {
-        let (socket, _) = listener.accept().await?;
+        let (socket, addrees) = listener.accept().await?;
+        println!("{:#?}", addrees);
         tokio::spawn(async move {
             if let Err(e) = handle_subscription(socket).await {
                 println!("Failed to handle connection: {}", e);
