@@ -14,7 +14,7 @@ This project implements a TCP socket server in Rust using the Tokio library. The
 ## Running server
 
 ```BASH
-cargo run
+cargo run 
 ```
 
 ## Binding To Server
